@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 Lista 2 Arrays Bidimensionais - Houssein e João P.</title>
+</head>
+<body>
+    <center>
+    <div class="titulo">
+        <h2>Exercício 1 - Lista 2 </h2>
+        <h3> JULLYA HEMMEL</h3>
+    </div><br>
+
+    <div id="SUA">
+    <script>
+        var parafuso, finn, jake
+        var houss=0
+        var finn=0
+        const matriz2 = []
+        
+        for (let lola=0; lola<3; lola++) {
+            houss++;
+            parafuso=parseInt(prompt("Digite um "+houss+"º valor"))
+            houss++;
+            finn=parseInt(prompt("Digite um "+houss+"º valor"))
+            houss++;
+            jake=parseInt(prompt("Digite um "+houss+"º valor"))
+            matriz2[finn] = [parafuso, finn, jake]
+            finn++
+        }
+
+        matriz2.forEach((matriz2) => {
+            document.write(matriz2.join(' | ')+"<br>");
+        });
+    
+        var soma = matriz2.flat().reduce((acc, valor) => acc + valor, 0);
+        document.write("<br>")
+        document.write(`Soma de todos os números: ${soma}`);
+
+    </script>
+    </div>
+    </center>
+
+</body>
+</html>
